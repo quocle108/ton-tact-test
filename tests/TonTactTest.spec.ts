@@ -54,13 +54,13 @@ describe('TonTactTest', () => {
             deploy: true,
             success: true,
         });
-        const deployerJettonWallet = await jettonContract.getGetWalletAddress(deployer.address);
-        deployerWallet = blockchain.openContract(await JettonDefaultWallet.fromAddress(deployerJettonWallet));
+        // const deployerJettonWallet = await jettonContract.getGetWalletAddress(deployer.address);
+        // deployerWallet = blockchain.openContract(await JettonDefaultWallet.fromAddress(deployerJettonWallet));
     });
 
     it('should config token', async () => {
-        const contractWalletAddr = await jettonContract.getGetWalletAddress(tonTactTest.address);
-        const contractWallet = blockchain.openContract(await JettonDefaultWallet.fromAddress(contractWalletAddr));
+        // const contractWalletAddr = await jettonContract.getGetWalletAddress(tonTactTest.address);
+        // const contractWallet = blockchain.openContract(await JettonDefaultWallet.fromAddress(contractWalletAddr));
 
         let configTokenResult = await tonTactTest.send(
             deployer.getSender(),

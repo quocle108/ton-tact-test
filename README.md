@@ -17,10 +17,34 @@
 
 `npx blueprint test` or `yarn blueprint test`
 
-### Deploy or run another script
+```
+ console.log
+    #DEBUG#: [DEBUG] File contracts/ton_tact_test.tact:31:9
+    #DEBUG#: Master: 
+    #DEBUG#: [DEBUG] File contracts/ton_tact_test.tact:32:9
+    #DEBUG#: EQA9sBJca1njccs9ax9-d1jXe--kH8xYM7AC-X7UTT3DWp0x
+    #DEBUG#: [DEBUG] File contracts/ton_tact_test.tact:33:9
+    #DEBUG#: Onwer: 
+    #DEBUG#: [DEBUG] File contracts/ton_tact_test.tact:34:9
+    #DEBUG#: EQAc9BddkOwhmwhEmt5YlxXsVnUQreiXpB8GI0dgFqsqRbTZ
+    #DEBUG#: [DEBUG] File contracts/ton_tact_test.tact:35:9
+    #DEBUG#: contractWallet: 
+    #DEBUG#: [DEBUG] File contracts/ton_tact_test.tact:36:9
+    #DEBUG#: EQCd6YhGbUWl14PtxYRwVW7brztYBGTPU6j3iX-r-3B3LBxu
 
-`npx blueprint run` or `yarn blueprint run`
+      at SmartContract.runCommon (node_modules/@ton/sandbox/dist/blockchain/SmartContract.js:221:21)
 
-### Add a new contract
-
-`npx blueprint create ContractName` or `yarn blueprint create ContractName`
+  console.log
+    #DEBUG#: [DEBUG] File contracts/jetton.tact:110:9
+    #DEBUG#: Master: 
+    #DEBUG#: [DEBUG] File contracts/jetton.tact:111:9
+    #DEBUG#: EQA9sBJca1njccs9ax9-d1jXe--kH8xYM7AC-X7UTT3DWp0x
+    #DEBUG#: [DEBUG] File contracts/jetton.tact:112:9
+    #DEBUG#: Onwer: 
+    #DEBUG#: [DEBUG] File contracts/jetton.tact:113:9
+    #DEBUG#: EQAc9BddkOwhmwhEmt5YlxXsVnUQreiXpB8GI0dgFqsqRbTZ
+    #DEBUG#: [DEBUG] File contracts/jetton.tact:114:9
+    #DEBUG#: contractWallet: 
+    #DEBUG#: [DEBUG] File contracts/jetton.tact:115:9
+    #DEBUG#: EQCvc-h9jpX2MZYTQuoJeDG_r7hM3NEDVhJnEAedftvYPL6N
+```
